@@ -1,0 +1,121 @@
+.banner {
+	width: 100%;
+	position: relative;
+}
+
+.banner img,
+.banner picture {
+	width: 100%;
+}
+
+.banner_scenary {
+	width: calc(100% - 20px);
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.banner_description {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+
+.banner_infographics {
+	display: none;
+	width: 100%;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+	margin-bottom: 8px;
+}
+
+.banner_count {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.banner_infographics img {
+	width: 20px;
+	margin: 0 -4px;
+	padding: 0;
+}
+
+.banner_man {
+	width: 40px;
+	height: 40px;
+	margin: 0 -4px;
+	padding: 0;
+	background-image: url(http://chelbunker.ru/wp-content/uploads/2021/04/Man.png);
+}
+
+.banner_common-text {
+	color: #fff;
+	text-shadow: rgba(0, 0, 0, 0.498039) 0 2px 5px;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 18px;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	text-decoration: none;
+	background-color: rgba(0, 0, 0, 0.298039);
+}
+
+.banner_common-text_margin {
+	display: block;
+	padding: 0 6px 0 4px;
+}
+
+.banner_common-text_right {
+	text-align: right;
+}
+
+@media screen and (min-width: 425px) {
+
+	.banner_scenary {
+		width: 75%;
+	}
+
+	.banner_common-text {
+		font-size: 14px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+
+	.banner_scenary {
+		width: 50%;
+	}
+
+	.banner_common-text {
+		font-size: 16px;
+	}
+
+	.banner_infographics {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+
+	.banner_scenary {
+		width: 50%;
+	}
+
+	.banner_common-text {
+		font-size: 26px;
+	}
+
+	.banner_infographics img {
+		width: 40px;
+		margin: 0 -4px;
+		padding: 0;
+	}
+}
